@@ -183,7 +183,7 @@
 
     this.init = function (successRedirectUrl) {
       w.$(function () {
-        w.mySuccessFunction = mySuccessFunction.bind(this, successRedirectUrl);
+        w.mySuccessFunction = app.mySuccessFunction.bind(this, successRedirectUrl);
 
         w.$('.js-form-proccess').each(function (index, $el) {
           $el.attr('data-success-callback', 'window.mySuccessFunction')
