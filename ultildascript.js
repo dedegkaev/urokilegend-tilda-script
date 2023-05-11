@@ -84,7 +84,7 @@
       } = obj;
 
       if (['buy', 'buy6', 'gift'].includes(formname)) {
-        pushFBEvent('InitiateCheckout');
+        app.pushFBEvent('InitiateCheckout');
       }
 
       const popupText = document.querySelectorAll('.t-form__successbox');
