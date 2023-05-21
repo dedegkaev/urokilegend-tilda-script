@@ -19,7 +19,7 @@
 
     this.pushFBEvent = (event, params = {}, meta = {}) => {
       if (w.fbq) {
-        console.log('123');
+        console.log('321');
         w.fbq('track', event, params, meta);
       }
     };
